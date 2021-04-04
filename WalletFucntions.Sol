@@ -1,0 +1,22 @@
+pragma solidity ^0.6.0;
+
+contract uservar{
+    bool public mybool;
+    uint8 public myUint=2;
+    string public myStr;
+    
+    function setBool() public{
+        mybool = true;
+    }
+    
+    function increment() public{
+        myUint++;
+    }
+    function decrement() public{
+        myUint--;
+    }
+    function setStr(string memory to) public returns(string memory){
+        myStr = to;
+        return myStr;
+    }
+}
